@@ -8,7 +8,7 @@ describe(`Checkout`, () => {
     cy.get("#password").type(senha)
     cy.get("#btnLogin").click()
     cy.get("#swal2-title")
-     .should("have.text", "Login realizado")
+     .should("have.text", "Login realizado") 
      .should("be.visible");
 
     cy.login("rudney@teste.com", "123456");
